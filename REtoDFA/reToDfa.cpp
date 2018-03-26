@@ -370,11 +370,11 @@ void print_Map_Dfa(mapNfa &dfa)
 {
     printf("dfa Map: \n");
     for(size_t i = 0; i < dfa.size(); i++) {
-        for (auto &i : (dfa.getOldMap())[i])
-            std::cout << i->nodeNum << " ";
+        for (auto &x : (dfa.getOldMap())[i])
+            std::cout << x->nodeNum << " ";
         std::cout << "   " << (dfa.getEdge())[i] << "    ";
-        for (auto &i : (dfa.getNewMap())[i])
-            std::cout << i->nodeNum << " ";
+        for (auto &x : (dfa.getNewMap())[i])
+            std::cout << x->nodeNum << " ";
         std::cout << std::endl;
     }
 }
