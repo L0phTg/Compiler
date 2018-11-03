@@ -31,7 +31,7 @@ struct Nfa
 
 void Log_err(const char *s)
 {
-    fprintf(stderr, s);
+    fprintf(stderr, "%s", s);
     exit(0);
 }
 
